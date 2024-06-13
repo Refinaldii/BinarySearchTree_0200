@@ -113,17 +113,16 @@ public:
     }
 
 };
-
 int main()
 {
     BinaryTree x;
     while (true)
     {
         cout << "\nMenu" << endl;
-        cout << "1. Implement insert operation " << endl;
+        cout << "1. Implement insert operation" << endl;
         cout << "2. Perform inorder traversal" << endl;
         cout << "3. Perform preorder traversal" << endl;
-        cout << "4. Perform postorder traversal" << endl;
+        cout << "4. Perform postorser traversal" << endl;
         cout << "5. Exit" << endl;
         cout << "\nEnter your choice (1-5) : ";
 
@@ -135,7 +134,7 @@ int main()
         {
         case '1':
         {
-            cout << "Enter a word: ";
+            cout << "Enter & word: ";
             string word;
             cin >> word;
             x.insert(word);
@@ -145,15 +144,12 @@ int main()
         {
             x.inorder(x.ROOT);
             break;
-
         }
-
         case '3':
         {
             x.preorder(x.ROOT);
             break;
         }
-
         case '4':
         {
             x.postorder(x.ROOT);
@@ -161,9 +157,14 @@ int main()
         }
         case '5':
         {
+            return 0;
+        default:
+        {
+            cout << "Invalid option" << endl;
             break;
         }
-        default:
-            break;
+        }
+        }
     }
 }
+
