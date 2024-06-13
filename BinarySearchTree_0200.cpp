@@ -43,10 +43,18 @@ public:
 
         if (parent == nullptr) // if the parent null (tree is empty)
         {
-            ROOT = newNode; // Marh the new node as ROOT
+            ROOT = newNode; // Mark the new node as ROOT
             return; //exit
         }
 
+        if (element < parent->info) // if the value in the data field of the new node is less than
+        {
+            parent->leftchild = newNode;
+        }
+        else if (element > parent->info)
+        {
+            parent->rightchild = newNode;
+        }
 
 
     }
