@@ -97,6 +97,10 @@ public:
         }
     }
 
+    void postorder(Node* ptr)
+    {
+
+    }
 
 };
 
